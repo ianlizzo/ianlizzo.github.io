@@ -18,3 +18,23 @@ body {
     font-family: Helvetica;
     margin: 0;
 }
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-right: 1px solid #FFF;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
