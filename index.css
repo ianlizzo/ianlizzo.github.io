@@ -1,13 +1,13 @@
-
 * {
     box-sizing: border-box;
 }
 
 .header {
-    padding: 80px;
-    text-align: center;
-    background: #7fffd4;
     color: black;
+    text-align: left;
+    padding: 80px;
+    background: #7fffd4 url(https://www.planwallpaper.com/static/images/awesome-japan-wallpaper-20182-21006-hd-wallpapers_tHogGUh.jpg);
+    background-position: 65% 65%;
 }
 
 .header h1 {
