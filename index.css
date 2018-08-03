@@ -2,39 +2,135 @@
     box-sizing: border-box;
 }
 
-.header {
+body {
+    font-family: Avenir;
+    background-color: black;
+    margin: 0;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: -(3em);
+}
+
+nav ul {
+    overflow: hidden;
+    background-color: darkslategray;
+    list-style-type: none;
+    width: 100%;
+    color: white;
+    margin: 0;
+    padding: 0;
+    /* box-shadow: 1px 2px 4px rgba(0, 0, 0, 1); */
+}
+
+nav ul li {
+    display: block;
+    margin: 0;
+    float: right;
+    text-align: center;
+    padding: 13px 20px;
+    border-left: 1px solid #FFF;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white
+}
+
+#navbar-title {
+    float: left;
+    color: white;
+    margin: auto;
+    font-weight: normal;
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+nav ul li:hover {
+    background-color: lightslategray;
     color: black;
-    text-align: left;
-    padding: 80px;
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.row {
+    display: flex;
+    flex: flex-wrap;
+}
+
+#img-header {
+    color: black;
+    padding: 90px;
     background-image: url("japan.jpg");
     background-position: 65% 65%;
 }
 
-.header h1 {
-    font-size: 40px;
-}
-
-body {
-    font-family: Helvetica;
-    margin: 0;
-}
-
-.navbar {
-    overflow: hidden;
-    background-color: black;
-}
-
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
     text-align: center;
-    padding: 15px 20px;
-    text-decoration: none;
-    border-right: 1px solid #FFF;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
+.side img {
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    /* font-size: 30px; */
+box-shadow: inset -8px 0 10px -6px gray;
+
+}
+
+.portfolio {
+
+    flex: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: inset 0 8px 10px -6px gray;
+
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        float: left;
+        width: 100%;
+        border-left: 0px solid #FFF;
+        border-top: 1px solid #FFF;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        margin: 0;
+        padding: px 10px px px;
+    }
+
+    #navbar-title {
+
+    }
 }

@@ -7,16 +7,67 @@
 <link href="index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="navbar">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
+<div id="img-header"></div>
+<nav id="navbar">
+  <ul>
+    <p id="navbar-title">IAN LIZARDA</p>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Home</a></li>
+  </ul>
+</nav>
+
+
+<div class="row">
+
+  <div class="main">
+      <h1>RHODE ISLAND SUCKS</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+  </div>
+  <div class="side">
+    <p>Here's me!</p>
+    <img src="profile-pic.jpeg" alt="profile picture">
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+  </div>
+
+</div>
+<div class="portfolio">
+<h1> PORTFOLIO </h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
 </div>
 
-<div class="header">
-    <h1>Ian Lizarda</h1>
-</div>
+
+
+<script>
+(function($) {
+    "use strict";
+
+    var $navbar = $("#navbar"),
+        y_pos = $navbar.offset().top,
+        height = $navbar.height();
+
+    $(document).scroll(function() {
+        var scrollTop = $(this).scrollTop();
+
+        if (scrollTop > y_pos + height) {
+            $navbar.addClass("navbar-fixed").animate({
+                top: 0
+            });
+        } else if (scrollTop <= y_pos) {
+            $navbar.removeClass("navbar-fixed").clearQueue().animate({
+                top: "-48px"
+            }, 0);
+        }
+    });
+
+})(jQuery, undefined);
+</script>
+
+
+
 
 
 
