@@ -22,8 +22,30 @@
 <div class="row">
 
   <div class="main">
-      <h1>RHODE ISLAND SUCKS</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+      <h1>ABOUT ME</h1>
+      <p>
+        Hello, I'm Ian! Currently, I'm an aspiring Software Developer
+        currently majoring in Computer Science at Loyola Marymount University.
+        I was born & raised in the small but homely state of Rhode Island. After
+        deciding that I needed to explore some new places, meet new people, and
+        try lots of different things, I moved to Los Angeles to further my education.
+      </p>
+      <p>
+        At LMU, I've learned so many things and have been involved with all types of
+        activities. I am a teaching assistant for the Keck Lab and LMU's Google
+        CSSIx, the Secretary of LMU's Association for Computing Machinery, an
+        active member of the Delta Sigma Phi fraternity–just to name a few. I have
+        also been involved with the Japanese Cultural Club Kyodai and the LMU
+        Men's Volleyball Club Team.
+      </p>
+      <p>
+        For programming experience, I've worked with a few different languages
+        and technologies. I have programmed mainly in Java, but have also worked
+        with Python, Javascript, HTML & CSS, and C. On top of that, I have used
+        various technologies such as Github/Git, npm, React.js, and Google
+        App Engine. I hope to use my knowledge and experience to develop intuitive
+        applications that help and serve others. 
+      </p>
   </div>
   <div class="side">
     <p>Here's me!</p>
@@ -42,34 +64,7 @@
 
 
 <script>
-(function($) {
-    "use strict";
-
-    var $navbar = $("#navbar"),
-        y_pos = $navbar.offset().top,
-        height = $navbar.height();
-
-    $(document).scroll(function() {
-        var scrollTop = $(this).scrollTop();
-
-        if (scrollTop > y_pos + height) {
-            $navbar.addClass("navbar-fixed").animate({
-                top: 0
-            });
-        } else if (scrollTop <= y_pos) {
-            $navbar.removeClass("navbar-fixed").clearQueue().animate({
-                top: "-48px"
-            }, 0);
-        }
-    });
-
-})(jQuery, undefined);
 </script>
-
-
-
-
-
 
 </body>
 </html>

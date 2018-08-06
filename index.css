@@ -54,18 +54,6 @@ nav ul li:hover {
     color: black;
 }
 
-
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
 .row {
     display: flex;
     flex: flex-wrap;
@@ -97,24 +85,28 @@ nav ul li:hover {
     flex: 70%;
     background-color: white;
     padding: 20px;
-    text-align: center;
-    /* font-size: 30px; */
-box-shadow: inset -8px 0 10px -6px gray;
+    box-shadow: inset -8px 0 10px -6px gray;
+}
 
+.main p {
+  font-size: 25px;
+  margin: 40px;
 }
 
 .portfolio {
-
     flex: 100%;
     background-color: white;
     padding: 20px;
     box-shadow: inset 0 8px 10px -6px gray;
-
 }
 
 @media screen and (max-width: 700px) {
     .row {
         flex-direction: column;
+    }
+
+    .side {
+      box-shadow: inset 0 8px 10px -6px gray;
     }
 }
 
